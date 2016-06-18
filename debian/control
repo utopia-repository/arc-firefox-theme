@@ -2,7 +2,9 @@ Source: arc-firefox-theme
 Section: gnome
 Priority: optional
 Maintainer: James Lu <bitflip3@gmail.com>
-Build-Depends: debhelper (>= 9)
+Build-Depends: debhelper (>= 9),
+ unzip,
+ zip
 Standards-Version: 3.9.8
 Homepage: https://github.com/horst3180/arc-firefox-theme
 Vcs-Git: https://github.com/utopia-themes/arc-theme

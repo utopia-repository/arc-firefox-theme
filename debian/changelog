@@ -1,3 +1,9 @@
+arc-firefox-theme (47.20160607-0utopia2) UNRELEASED; urgency=medium
+
+  * Build-dep on zip and unzip (used in the makefile).
+
+ -- James Lu <bitflip3@gmail.com>  Sat, 18 Jun 2016 15:16:22 -0700
+
 arc-firefox-theme (47.20160607-0utopia1) unstable; urgency=medium
 
   * Native packaging.
