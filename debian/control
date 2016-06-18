@@ -4,9 +4,9 @@ Priority: optional
 Maintainer: James Lu <bitflip3@gmail.com>
 Build-Depends: debhelper (>= 9)
 Standards-Version: 3.9.8
-Homepage: https://github.com/horst3180/arc-theme
-Vcs-Git: https://github.com/GLolol/arc-theme
-Vcs-Browser: https://github.com/GLolol/arc-theme
+Homepage: https://github.com/horst3180/arc-firefox-theme
+Vcs-Git: https://github.com/utopia-themes/arc-theme
+Vcs-Browser: https://github.com/utopia-themes/arc-theme
 
 Package: arc-firefox-theme
 Architecture: any
