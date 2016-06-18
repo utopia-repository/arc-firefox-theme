@@ -1,3 +1,9 @@
+arc-firefox-theme (47.20160607-0utopia1) unstable; urgency=medium
+
+  * Native packaging.
+
+ -- James Lu <bitflip3@gmail.com>  Sat, 18 Jun 2016 14:23:16 -0700
+
 arc-firefox-theme (47.20160607~utopia1) unstable; urgency=medium
 
   * Initial Utopia Repository release.
