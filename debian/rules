@@ -1,0 +1,17 @@
+#!/usr/bin/make -f
+#export DH_VERBOSE = 1
+
+%:
+	dh $@
+
+PACKAGE_NAME=arc-firefox-theme
+
+override_dh_auto_install:
+	dh_auto_install
+	./autogen.sh --prefix=$(shell pwd)/debian/$(PACKAGE_NAME)/usr
+	make install
+
+# Fix permissions on .svg files
+override_dh_fixperms:
+	dh_fixperms
+	find debian/$(PACKAGE_NAME) -name "*.svg" -type f -perm 755 -print -exec chmod 644 {} \;
