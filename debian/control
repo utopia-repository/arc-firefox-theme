@@ -1,4 +1,4 @@
-Source: arc-firefox-theme
+Source: arc-firefox-theme-esr
 Section: gnome
 Priority: optional
 Maintainer: James Lu <bitflip3@gmail.com>
@@ -10,17 +10,20 @@ Build-Depends: debhelper (>= 9),
  dh-autoreconf
 Standards-Version: 3.9.8
 Homepage: https://github.com/horst3180/arc-firefox-theme
-Vcs-Git: https://github.com/utopia-themes/arc-theme
-Vcs-Browser: https://github.com/utopia-themes/arc-theme
+Vcs-Git: https://github.com/utopia-repository/arc-firefox-theme debian-esr
+Vcs-Browser: https://github.com/utopia-repository/arc-firefox-theme/tree/
 
-Package: arc-firefox-theme
+Package: arc-firefox-theme-esr
 Architecture: any
 Depends: ${misc:Depends},
- firefox (>= 47~),
- arc-gtk-theme
+ firefox-esr (>= 45~),
+ arc-theme
+Conflicts: arc-firefox-theme
+Provides: arc-firefox-theme
+Replaces: arc-firefox-theme
 Description: flat theme with transparent elements
  Arc is a flat theme with transparent elements for GTK+ 3, GTK+ 2 and GNOME
  Shell. It supports GNOME, Unity, Budgie, Pantheon, XFCE, Mate, and others.
  .
  This package installs three theme versions: Arc, Arc-Darker, and Arc-Dark,
- for the Mozilla Firefox web browser.
+ for the Mozilla Firefox web browser, ESR.
