@@ -17,7 +17,7 @@ Package: arc-firefox-theme
 Architecture: any
 Depends: ${misc:Depends},
  firefox (>= 47~),
- arc-gtk-theme
+ arc-theme
 Description: flat theme with transparent elements
  Arc is a flat theme with transparent elements for GTK+ 3, GTK+ 2 and GNOME
  Shell. It supports GNOME, Unity, Budgie, Pantheon, XFCE, Mate, and others.

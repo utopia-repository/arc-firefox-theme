@@ -1,8 +1,12 @@
-arc-firefox-theme (47.20160607-0utopia2) UNRELEASED; urgency=medium
+arc-firefox-theme (48.20160802-0utopia1) unstable; urgency=medium
 
-  * Build-dep on zip and unzip (used in the makefile).
+  * New upstream version.
+  * Build-dep on zip, unzip (used in the makefile), automake, autoconf.
+  * Switch to dh-autoreconf.
+  * Switch dependency to arc-theme instead of arc-gtk-theme.
+  * Remove *.xpi in dh_clean, so that successive builds work.
 
- -- James Lu <bitflip3@gmail.com>  Sat, 18 Jun 2016 15:16:22 -0700
+ -- James Lu <bitflip3@gmail.com>  Sat, 20 Aug 2016 23:01:48 -0700
 
 arc-firefox-theme (47.20160607-0utopia1) unstable; urgency=medium
 
