@@ -2,14 +2,9 @@
 #export DH_VERBOSE = 1
 
 %:
-	dh $@
+	dh $@ --with autoreconf
 
 PACKAGE_NAME=arc-firefox-theme
-
-override_dh_auto_install:
-	dh_auto_install
-	./autogen.sh --prefix=$(shell pwd)/debian/$(PACKAGE_NAME)/usr
-	make install
 
 # Fix permissions on .svg files
 override_dh_fixperms:
