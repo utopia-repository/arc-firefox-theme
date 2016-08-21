@@ -1,0 +1,17 @@
+#!/usr/bin/make -f
+#export DH_VERBOSE = 1
+
+%:
+	dh $@ --with autoreconf
+
+PACKAGE_NAME=arc-firefox-theme
+
+# Fix permissions on .svg files
+override_dh_fixperms:
+	dh_fixperms
+	find debian/$(PACKAGE_NAME) -name "*.svg" -type f -perm 755 -print -exec chmod 644 {} \;
+
+override_dh_auto_clean:
+	dh_auto_clean
+	rm -f Makefile.in aclocal.m4 configure install-sh missing
+
