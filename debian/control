@@ -16,7 +16,7 @@ Vcs-Browser: https://github.com/utopia-themes/arc-theme
 Package: arc-firefox-theme
 Architecture: any
 Depends: ${misc:Depends},
- firefox (>= 47~),
+ firefox (>= 49~),
  arc-theme
 Description: flat theme with transparent elements
  Arc is a flat theme with transparent elements for GTK+ 3, GTK+ 2 and GNOME

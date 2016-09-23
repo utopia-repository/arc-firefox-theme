@@ -1,3 +1,10 @@
+arc-firefox-theme (49.20160920-0utopia1) unstable; urgency=medium
+
+  * New upstream release.
+  * Bump required Firefox version to 49.
+
+ -- James Lu <bitflip3@gmail.com>  Thu, 22 Sep 2016 19:07:43 -0700
+
 arc-firefox-theme (48.20160802-0utopia1) unstable; urgency=medium
 
   * New upstream version.
