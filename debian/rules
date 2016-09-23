@@ -9,7 +9,7 @@ PACKAGE_NAME=$(shell dpkg-parsechangelog -S Source)
 # Fix permissions on .svg files
 override_dh_fixperms:
 	dh_fixperms
-	find debian/$(PACKAGE_NAME) -name "*.svg" -type f -perm 755 -print -exec chmod 644 {} \;
+	find debian/$(PACKAGE_NAME) \( -name "*.svg" -o -name "*.png" \) -type f -perm 755 -print -exec chmod 644 {} \;
 
 override_dh_auto_clean:
 	dh_auto_clean
