@@ -4,7 +4,7 @@
 %:
 	dh $@ --with autoreconf
 
-PACKAGE_NAME=arc-firefox-theme
+PACKAGE_NAME=$(shell dpkg-parsechangelog -S Source)
 
 # Fix permissions on .svg files
 override_dh_fixperms:
